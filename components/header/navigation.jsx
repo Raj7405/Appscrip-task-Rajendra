@@ -64,7 +64,7 @@ const NavigationBar = () => {
                   width={24}
                   height={24}
                   key={i}
-                  className={i > arr.length - 2 && `${styles.display}`}
+                  className={i > arr.length - 2 ? `${styles.display}` : undefined}
                 />
               );
             })}

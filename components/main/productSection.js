@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import style from "@/styles/productSection.module.css";
+import style from "@/styles/ProductSection.module.css";
 import Card from "../ui/card";
 import sortDataBykey from "@/components/functions/sortDataBykey";
 import SideFilterBar from "./sideFilterBar";
@@ -20,9 +20,7 @@ const ProductSection = ({ productData }) => {
     }
   }, [selectedCatgory]);
 
-//   useEffect(() => {
 
-//   },[selectedCatgory])
 
   const handleFilterSection = () => {
     setFilterSectionFlag((prev) => !prev);

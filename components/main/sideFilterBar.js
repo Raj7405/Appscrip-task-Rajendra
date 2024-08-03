@@ -1,4 +1,4 @@
-import style from "@/styles/sideFilterBar.module.css";
+import style from "@/styles/SideFilterBar.module.css";
 import DropDownCheckList from "../ui/dropDownCheckList";
 
 const SideFilterBar = ({ setSelectedCatgory }) => {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "@/styles/card.module.css";
+import style from "@/styles/Card.module.css";
 
 const Card = ({ productInfo }) => {
   return (

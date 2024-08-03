@@ -1,4 +1,4 @@
-import styles from "@/styles/navBar.module.css";
+import styles from "@/styles/NavBar.module.css";
 
 const NavigationBar = () => {
   const navLinks = ["SHOPS", "SKILLS", "STORIES", "ABOUT US", "CONTACT"];

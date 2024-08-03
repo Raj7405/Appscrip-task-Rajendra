@@ -121,19 +121,18 @@ a {
   margin-top: 16px;
 }
 
+.footer{
+  background-color: #000000;
+  color: #fff;
+}
 
 @media only screen and (max-width: 600px){
   .midBanner{
-    margin: 40px 10px 0;
-    
+    margin-bottom: 22px;
   }
   .midBanner p{
     font-size: 16px;
     line-height: 22px;
     margin-top: 5px;
   }
-}
-.footer{
-  background-color: #000000;
-  color: #fff;
 }

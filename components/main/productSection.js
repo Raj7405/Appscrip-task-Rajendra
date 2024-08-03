@@ -52,7 +52,7 @@ const ProductSection = ({productData}) => {
         <div className={style.productSection}>
             <div className={style.sectionHeader}>
                 <div className={style.leftSectionHeader}>
-                    <p>{data.length} Items</p>
+                    <p className={style.itemCount}>{data.length} Items</p>
                     {
                         filterSectionFlag 
                         ? <p className={style.showFilter} onClick={handleFilterSection}>&lt; Hide Filter</p>

@@ -5,12 +5,9 @@ const Card = ({productInfo}) => {
     return(
         <div className={style.card}>
             <div className={style.cardImgContainer}>
-                <Image 
+                <img 
                     src={productInfo.image}
                     alt={productInfo.title}
-                    width={300}
-                    height={390}
-                    layout="intrinsic"
                     className={style.cardImg}
                 />
             </div>

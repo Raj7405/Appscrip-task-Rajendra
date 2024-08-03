@@ -1,26 +1,56 @@
 import style from "@/styles/footer.module.css";
+import { useState } from "react";
 const LowerFooter = () => {
+    const [activeFooterLinks, setActiveFooterLinks] = useState(false) 
+    const [activeQuickLinksLinks, setActiveQuickLinksLinks] = useState(false) 
+    const handleFooterActive = () => {
+        setActiveFooterLinks(!activeFooterLinks)
+    } 
+    const handleQuickActive = () => {
+        setActiveQuickLinksLinks(!activeQuickLinksLinks)
+    } 
     return(
         <div className={style.lowerFooter}>
             <div className={style.footerLinks}>
-                <h4>mettā muse</h4>
-                <h5>About Us</h5>
-                <h5>Stories</h5>
-                <h5>Artisans</h5>
-                <h5>Boutiques</h5>
-                <h5>Contact Us</h5>
-                <h5>EU Compliances Docs</h5>
+                <h4 onClick={handleFooterActive}>
+                    mettā muse
+                {activeFooterLinks 
+                ? <span><img src="/icons/upArrowWhite.svg"/></span> 
+                : <span ><img src="/icons/downArrowWhite.svg"/></span>
+                 }
+                </h4>
+                {activeFooterLinks 
+                &&<>
+                    <h5>About Us</h5>
+                    <h5>Stories</h5>
+                    <h5>Artisans</h5>
+                    <h5>Boutiques</h5>
+                    <h5>Contact Us</h5>
+                    <h5>EU Compliances Docs</h5>
+                </>
+                }
             </div>
             <div className={style.quickLinks}>
-                <h4>QUICK LINKS</h4>
-                <h5>Orders & Shipping</h5>
-                <h5>Join/Login as a Seller</h5>
-                <h5>Payment & Pricing</h5>
-                <h5>Return & Refunds</h5>
-                <h5>FAQs Us</h5>
-                <h5>Privacy Policy</h5>
-                <h5>Terms & Conditions  </h5>
-            </div>
+                <h4 onClick={handleQuickActive}>
+                    QUICK LINKS
+                {activeQuickLinksLinks 
+                ? <span><img src="/icons/upArrowWhite.svg"/></span> 
+                : <span ><img src="/icons/downArrowWhite.svg"/></span>
+                }
+                </h4>
+                {activeQuickLinksLinks 
+                &&
+                <>
+                    <h5>Orders & Shipping</h5>
+                    <h5>Join/Login as a Seller</h5>
+                    <h5>Payment & Pricing</h5>
+                    <h5>Return & Refunds</h5>
+                    <h5>FAQs Us</h5>
+                    <h5>Privacy Policy</h5>
+                    <h5>Terms & Conditions  </h5>
+                </>
+                }
+                            </div>
             <div className={style.folloUsSeciton}>
                 <div className={style.folloUs}>
                     <h4>FOLLOW US</h4>

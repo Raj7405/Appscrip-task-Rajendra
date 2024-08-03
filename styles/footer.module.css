@@ -70,3 +70,43 @@
 .folloUs{
     margin-bottom: 26px;
 }
+
+@media only screen and (max-width: 600px){
+    .upperFooter, .lowerFooter{
+        width: 343px;
+        margin: auto;
+        padding: 0 0 20px;
+        flex-direction: column;
+    }
+    .upperFooter{
+        padding-top: 26px;
+    }
+    .currencySeaction{
+        display: none;
+    }
+    .inputSub {
+        margin-bottom: 10px;
+    }
+
+    .inputSub input{
+        padding: 5px 24px;
+        width: 235px ;
+        height: 47px;
+        margin-right: 5px;
+    }
+    .inputSub button {
+        width: 100px ;
+        height: 47px;
+        color: #FFFFFF;
+        background-color: transparent;
+        border: 1.4px #FFFFFF solid;
+    }
+    
+    .footerLinks, .quickLinks{
+        border-bottom:1px #fff solid ;
+        padding-top: 20px;
+    }
+    .folloUs{
+        margin-top: 10px;
+    }
+}

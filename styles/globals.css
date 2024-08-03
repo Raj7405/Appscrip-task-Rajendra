@@ -101,3 +101,35 @@ a {
   text-decoration: none;
 }
 
+.midBanner{
+  width: 100%;
+  max-width: 721px;
+  margin: 72px auto;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.midBanner h1{
+  font-size: calc(2em + 1vw);
+  font-weight: 400;
+}
+.midBanner p{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  color:#252020;
+  margin-top: 16px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .midBanner{
+    margin: 40px 10px 0;
+    
+  }
+  .midBanner p{
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+}

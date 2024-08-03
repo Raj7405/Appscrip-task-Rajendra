@@ -4,7 +4,10 @@
     max-width: 1248px;
     margin: auto;
 }
-
+.productShowSection{
+    display: flex;
+    justify-content: space-between;
+}
 .sectionHeader{
     display: flex;
     justify-content: space-between;
@@ -33,6 +36,7 @@
 }
 
 .products{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;

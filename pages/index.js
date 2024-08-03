@@ -10,19 +10,21 @@ import UpperFooter from "@/components/footer/upperFooter";
 import LowerFooter from "@/components/footer/lowerFooter";
 
 const inter = Inter({ subsets: ["latin"] });
-export const getStaticProps =  async (context) => {
-  const productData = await( await fetch(`https://fakestoreapi.com/products`)).json()
+export const getStaticProps = async (context) => {
+  const productData = await (
+    await fetch(`https://fakestoreapi.com/products`)
+  ).json();
   return {
-      props: {
-          productData,
-      }
-  }
-}
-export default function Home({productData}) {
+    props: {
+      productData,
+    },
+  };
+};
+export default function Home({ productData }) {
   useEffect(() => {
-    console.log('re-render index');
-    console.log(productData.map(item => item.category));
-  },[])
+    console.log("re-render index");
+    console.log(productData.map((item) => item.category));
+  }, []);
   return (
     <>
       <Head>
@@ -31,13 +33,13 @@ export default function Home({productData}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <NavigationBar/>
-        <MidBanner/>
-        <ProductSection productData={productData}/>
+        <NavigationBar />
+        <MidBanner />
+        <ProductSection productData={productData} />
       </main>
       <footer className="footer">
-        <UpperFooter/>
-        <LowerFooter/>
+        <UpperFooter />
+        <LowerFooter />
       </footer>
     </>
   );

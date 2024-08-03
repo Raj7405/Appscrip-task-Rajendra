@@ -1,112 +1,118 @@
-.upperFooter, .lowerFooter{
-    width: 100%;
-    max-width: 1248px;
-    margin: auto;
-    padding: 76px 0 20px;
-    display: flex;
-    justify-content: space-between;
+.upperFooter,
+.lowerFooter {
+  width: 100%;
+  max-width: 1248px;
+  margin: auto;
+  padding: 76px 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.upperFooter{
-    border-bottom: 1px #fff solid;
-
+.upperFooter {
+  border-bottom: 1px #fff solid;
 }
-    
-.inputSub input{
-    padding: 5px 24px;
-    width: 384px ;
-    height: 47px;
-    margin-right: 16px;
+
+.inputSub input {
+  padding: 5px 24px;
+  width: 384px;
+  height: 47px;
+  margin-right: 16px;
 }
 .inputSub button {
-    width: 184px ;
+  width: 184px;
+  height: 47px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1.4px #ffffff solid;
+}
+
+.contactUs {
+  margin-bottom: 24px;
+}
+.subscribe h4,
+.contactUs h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.subscribe p,
+.contactUs p {
+  margin-bottom: 16px;
+}
+.currencySeaction {
+  margin-bottom: 25px;
+}
+.currencySeaction h4,
+.currencySeaction .currency {
+  margin-bottom: 16px;
+}
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.message {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.footerLinks h4,
+.quickLinks h4,
+.folloUs h4 {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footerLinks h5,
+.quickLinks h5 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.folloUs {
+  margin-bottom: 26px;
+}
+
+@media only screen and (max-width: 600px) {
+  .upperFooter,
+  .lowerFooter {
+    width: 343px;
+    margin: auto;
+    padding: 0 0 20px;
+    flex-direction: column;
+  }
+  .upperFooter {
+    padding-top: 26px;
+  }
+  .currencySeaction {
+    display: none;
+  }
+  .inputSub {
+    margin-bottom: 10px;
+  }
+
+  .inputSub input {
+    padding: 5px 24px;
+    width: 235px;
     height: 47px;
-    color: #FFFFFF;
+    margin-right: 5px;
+  }
+  .inputSub button {
+    width: 100px;
+    height: 47px;
+    color: #ffffff;
     background-color: transparent;
-    border: 1.4px #FFFFFF solid;
-}
+    border: 1.4px #ffffff solid;
+  }
 
-
-.contactUs{
-    margin-bottom: 24px;
-}
-.subscribe h4,.contactUs h4{
-    font-size: 20px;
-    margin-bottom: 16px;
-}
-.subscribe p, .contactUs p{
-    margin-bottom: 16px;
-}
-.currencySeaction{
-    margin-bottom: 25px;
-}
-.currencySeaction h4, .currencySeaction .currency{
-    margin-bottom: 16px;
-}
-.currency{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.message{
-    font-weight: 400;
-    font-size: 12px;
-}
-
-
-.footerLinks h4, .quickLinks h4, .folloUs h4{
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.footerLinks h5, .quickLinks h5{
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 16px;
-}
-.folloUs{
-    margin-bottom: 26px;
-}
-
-@media only screen and (max-width: 600px){
-    .upperFooter, .lowerFooter{
-        width: 343px;
-        margin: auto;
-        padding: 0 0 20px;
-        flex-direction: column;
-    }
-    .upperFooter{
-        padding-top: 26px;
-    }
-    .currencySeaction{
-        display: none;
-    }
-    .inputSub {
-        margin-bottom: 10px;
-    }
-
-    .inputSub input{
-        padding: 5px 24px;
-        width: 235px ;
-        height: 47px;
-        margin-right: 5px;
-    }
-    .inputSub button {
-        width: 100px ;
-        height: 47px;
-        color: #FFFFFF;
-        background-color: transparent;
-        border: 1.4px #FFFFFF solid;
-    }
-    
-    .footerLinks, .quickLinks{
-        border-bottom:1px #fff solid ;
-        padding-top: 20px;
-    }
-    .folloUs{
-        margin-top: 10px;
-    }
+  .footerLinks,
+  .quickLinks {
+    border-bottom: 1px #fff solid;
+    padding-top: 20px;
+  }
+  .folloUs {
+    margin-top: 10px;
+  }
 }

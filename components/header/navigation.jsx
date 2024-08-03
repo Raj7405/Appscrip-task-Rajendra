@@ -1,4 +1,4 @@
-import styles from "@/styles/NavBar.module.css";
+import styles from "@/styles/navBar.module.css";
 
 const NavigationBar = () => {
   const navLinks = ["SHOPS", "SKILLS", "STORIES", "ABOUT US", "CONTACT"];
@@ -64,7 +64,9 @@ const NavigationBar = () => {
                   width={24}
                   height={24}
                   key={i}
-                  className={i > arr.length - 2 ? `${styles.display}` : undefined}
+                  className={
+                    i > arr.length - 2 ? `${styles.display}` : undefined
+                  }
                 />
               );
             })}

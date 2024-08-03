@@ -10,7 +10,6 @@ function sortDataBykey(array, key, order = 'asc') {
       if (aValue > bValue) {
         return order === 'asc' ? 1 : -1;
       }
-      
       return 0;
     });
   }

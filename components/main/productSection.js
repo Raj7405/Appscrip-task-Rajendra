@@ -18,7 +18,11 @@ const ProductSection = ({ productData }) => {
       const filterData = filterDataByCategory(productData, selectedCatgory);
       setData(filterDataByCategory(productData, selectedCatgory));
     }
-  }, [data, selectedCatgory]);
+  }, [selectedCatgory]);
+
+//   useEffect(() => {
+
+//   },[selectedCatgory])
 
   const handleFilterSection = () => {
     setFilterSectionFlag((prev) => !prev);

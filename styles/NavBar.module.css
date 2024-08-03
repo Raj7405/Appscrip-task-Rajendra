@@ -56,7 +56,7 @@
     width: 100%;
     max-width: 33.3%;
     display: flex; 
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     /* background-color: bisque; */
     overflow: hidden;

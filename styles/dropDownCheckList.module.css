@@ -1,0 +1,32 @@
+.dropDownCheckList{
+    padding: 5px 1px;
+    margin: 24px 0;
+    border-bottom: 1px #E5E5E5 solid;
+}
+
+.dropDownCheckList h1{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.dropDownCheckList p{
+    margin-bottom: 5px;
+}
+.filterHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkList{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 5px 24px;   
+}
+.checkList input[type=checkbox] {
+    margin: 4px 0 0;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+}
+

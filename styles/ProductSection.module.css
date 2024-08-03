@@ -41,3 +41,15 @@
     flex-wrap: wrap;
     gap: 16px;
 }
+
+.message{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 450px;
+    text-align: center;
+}
+.message h1 {
+    font-size: 36px;
+    font-weight: 400;
+}

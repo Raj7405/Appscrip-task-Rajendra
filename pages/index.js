@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import NavigationBar from "/components/header/navigation";
 import MidBanner from "@/components/header/midBanner";
 import ProductSection from "../components/main/productSection";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 export const getStaticProps =  async (context) => {
@@ -16,6 +17,10 @@ export const getStaticProps =  async (context) => {
   }
 }
 export default function Home({productData}) {
+  useEffect(() => {
+    console.log('re-render index');
+    console.log(productData.map(item => item.category));
+  },[])
   return (
     <>
       <Head>

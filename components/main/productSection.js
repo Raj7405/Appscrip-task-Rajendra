@@ -3,14 +3,22 @@ import style from '@/styles/ProductSection.module.css'
 import Card from "../ui/card"
 import sortDataBykey from "@/components/functions/sortDataBykey"
 import SideFilterBar from "./sideFilterBar"
+import { filterDataByCategory } from "../functions/filterDataByCategory"
 
 const ProductSection = ({productData}) => {
     const [data, setData] = useState(productData)
     const [filterSectionFlag, setFilterSectionFlag] = useState(false)
+    const [selectedCatgory, setSelectedCatgory] = useState([])
 
     useEffect(() => {
-        console.log('re-rendered')
-    },[data])
+        console.log('re-rendered', selectedCatgory)
+        if(selectedCatgory.length === 0){
+            setData(productData)
+        }else{
+            const filterData = filterDataByCategory(productData, selectedCatgory);
+            setData(filterDataByCategory(productData, selectedCatgory));
+        }
+    },[data, selectedCatgory])
 
     const handleFilterSection = () => {
         setFilterSectionFlag(prev => !prev)
@@ -39,6 +47,7 @@ const ProductSection = ({productData}) => {
         }
         console.log(e.target.value)
     }
+
     return (
         <div className={style.productSection}>
             <div className={style.sectionHeader}>
@@ -62,10 +71,14 @@ const ProductSection = ({productData}) => {
             </div>
 
             <div className={style.productShowSection}>
-                {filterSectionFlag && <SideFilterBar/>}
+                {filterSectionFlag && <SideFilterBar setSelectedCatgory={setSelectedCatgory}/>}
                 <div className={style.products}>
                 {
-                    data.map((productItem, i) => <Card productInfo={productItem} key={productItem.id}/>)
+                    data.length 
+                    ? data.map((productItem, i) => <Card productInfo={productItem} key={productItem.id}/>)
+                    : <div className={style.message}>
+                        <h1>SELECTED CATEGORY PRODUCT IS NOT AVAILABLE</h1>
+                    </div>
                 }   
                  </div>
             </div>

@@ -1,14 +1,19 @@
-.upperFooter{
+.upperFooter, .lowerFooter{
     width: 100%;
     max-width: 1248px;
     margin: auto;
     padding: 76px 0 20px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px #fff solid;
 }
 
+.upperFooter{
+    border-bottom: 1px #fff solid;
+
+}
+    
 .inputSub input{
+    padding: 5px 24px;
     width: 384px ;
     height: 47px;
     margin-right: 16px;
@@ -46,4 +51,22 @@
 .message{
     font-weight: 400;
     font-size: 12px;
+}
+
+
+.footerLinks h4, .quickLinks h4, .folloUs h4{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footerLinks h5, .quickLinks h5{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.folloUs{
+    margin-bottom: 26px;
 }

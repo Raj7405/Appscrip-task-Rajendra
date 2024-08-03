@@ -1,0 +1,49 @@
+.upperFooter{
+    width: 100%;
+    max-width: 1248px;
+    margin: auto;
+    padding: 76px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #fff solid;
+}
+
+.inputSub input{
+    width: 384px ;
+    height: 47px;
+    margin-right: 16px;
+}
+.inputSub button {
+    width: 184px ;
+    height: 47px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1.4px #FFFFFF solid;
+}
+
+
+.contactUs{
+    margin-bottom: 24px;
+}
+.subscribe h4,.contactUs h4{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.subscribe p, .contactUs p{
+    margin-bottom: 16px;
+}
+.currencySeaction{
+    margin-bottom: 25px;
+}
+.currencySeaction h4, .currencySeaction .currency{
+    margin-bottom: 16px;
+}
+.currency{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.message{
+    font-weight: 400;
+    font-size: 12px;
+}

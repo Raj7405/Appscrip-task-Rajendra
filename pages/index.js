@@ -6,6 +6,7 @@ import NavigationBar from "/components/header/navigation";
 import MidBanner from "@/components/header/midBanner";
 import ProductSection from "../components/main/productSection";
 import { useEffect } from "react";
+import UpperFooter from "@/components/footer/upperFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 export const getStaticProps =  async (context) => {
@@ -33,7 +34,8 @@ export default function Home({productData}) {
         <MidBanner/>
         <ProductSection productData={productData}/>
       </main>
-      <footer>
+      <footer className="footer">
+        <UpperFooter/>
       </footer>
     </>
   );

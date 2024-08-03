@@ -1,0 +1,126 @@
+
+.container{
+    width: 100%;
+    max-width: 1248px;
+    margin: auto;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    width: 100%;
+    border-bottom: 1px black solid;
+}
+.topBanner{   
+    color: #EB4C6B ;
+    background-color: #000 ;
+    text-align: center;
+}
+.topBannerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.topBanner p{
+    font-size: 12px;
+    padding: 8px;
+}
+.topText{
+    display: flex;
+    align-items: center;
+}
+.midNavBar{
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 33.3%;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: clamp(20px, 3vw, 36px);
+    font-weight: 800;
+    /* background-color: bisque; */
+}
+.iconBar{
+    width: 100%;
+    max-width: 33.3%;
+    display: flex; 
+    justify-content: end;
+    align-items: center;
+    /* background-color: bisque; */
+    overflow: hidden;
+}
+.iconBar img{
+    margin-right: 24px;
+}
+.companyIcon{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 33.3%;
+    margin-left: 20px;
+    /* background-color: bisque; */
+}
+.menu{
+    display: none;
+}
+.navLink{
+    width: 100%;
+    max-width: 636px;
+    height: 24px;
+    
+    margin: auto;
+    margin-bottom: 24px;
+    
+    font-weight: 700;
+    font-size: 20px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .display{
+        display: none;
+    }
+    .displayOn{
+        display: inline-block;
+    }
+    /* .logo{
+        font-size: 20px;
+    } */
+    .iconBar img{
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+    .companyIcon{
+        width: 30%;
+    }
+    .companyIcon img{
+        width: 20px;
+    }
+    .menu{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .navLink{
+        display: none;
+    }
+    .midNavBar{
+        margin-bottom: 15px;
+    }
+}

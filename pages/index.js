@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import NavigationBar from "/components/header/navigation";
 import MidBanner from "@/components/header/midBanner";
+import ProductSection from "../components/main/productSection";
 
 const inter = Inter({ subsets: ["latin"] });
 export const getStaticProps =  async (context) => {
@@ -25,6 +26,7 @@ export default function Home({productData}) {
       <main>
         <NavigationBar/>
         <MidBanner/>
+        <ProductSection productData={productData}/>
       </main>
       <footer>
       </footer>

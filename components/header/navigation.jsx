@@ -1,9 +1,22 @@
 import styles from "@/styles/NavBar.module.css";
+import useWindowDimensions from "../hooks/useWindowDimensions ";
+import { useEffect, useState } from "react";
 
 const NavigationBar = () => {
+  const [menuActive, setMenuActive] = useState(false)
+  const { width,height} = useWindowDimensions()
+
+  useEffect(() => {
+    console.log([width, height])
+  },[width])
+  
   const navLinks = ["SHOPS", "SKILLS", "STORIES", "ABOUT US", "CONTACT"];
   const navIcon = ["search", "heart", "cart", "profile"];
   const cx = (...className) => className.join(" ");
+  
+  const handleMenu = () => {
+    setMenuActive(!menuActive)
+  }
   return (
     <div className={styles.header}>
       <div className={styles.topBanner}>
@@ -37,7 +50,7 @@ const NavigationBar = () => {
           </div>
         </div>
       </div>
-      <div className={cx(styles.flexCol, styles.container)}>
+      <div className={cx(styles.flexCol, styles.container, styles.menuBar)}>
         <div className={cx(styles.midNavBar)}>
           <div className={styles.companyIcon}>
             <img
@@ -46,6 +59,7 @@ const NavigationBar = () => {
               width={20}
               height={20}
               className={styles.menu}
+              onClick={handleMenu}
             />
             <img
               src="/companyIcon.svg"
@@ -81,8 +95,10 @@ const NavigationBar = () => {
             </span>
           </div>
         </div>
-        <div className={cx(styles.navLink)}>
-          {navLinks.map((links, i) => {
+        <div className={width > 600 ? styles.navLink : styles.navLinkMenu}>
+          {
+          (width > 600 ? true : menuActive)&&
+          navLinks.map((links, i) => {
             return (
               <a href="#" key={i}>
                 {links}

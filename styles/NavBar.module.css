@@ -35,6 +35,9 @@
     display: flex;
     align-items: center;
 }
+/* .menuBar{
+    position: relative;
+} */
 .midNavBar{
     width: 100%;
     margin-top: 36px;
@@ -42,6 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 .logo{
     width: 33.3%;
@@ -89,7 +93,25 @@
     justify-content: space-around;
     align-items: center; 
 }
-
+.navLinkMenu{
+    position: absolute;
+    background-color: black;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    top: 120px;
+    z-index: 2;
+}
+.navLinkMenu a{
+    color: #EB4C6B;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+}
+.navLinkMenu a:hover{
+    color: #c00b2f;
+    background-color:#fffffff7;
+}
 
 @media only screen and (max-width: 600px) {
     .display{
@@ -115,9 +137,6 @@
     .menu{
         display: inline-block;
         margin-right: 10px;
-    }
-    .navLink{
-        display: none;
     }
     .midNavBar{
         margin-bottom: 15px;

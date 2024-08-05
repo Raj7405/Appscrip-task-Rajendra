@@ -70,7 +70,7 @@ const LowerFooter = () => {
         </div>
         <div className={style.folloUs}>
           <h4>mettā muse ACCEPTS</h4>
-          <div className={style.socialLink}>
+          <div className={style.socialLinkBanner}>
             <img src="/icons/media.svg" alt="media flag" />
           </div>
         </div>

@@ -74,9 +74,14 @@
 .folloUs {
   margin-bottom: 26px;
 }
+.socialLinkBanner{
+  width: 363px;
+}
 .socialLinkBanner img{
   width: 100%;
-  max-width: 376px;
+  max-width: 51px;
+  height: 30px;
+  margin-right: 6px;
 }
 @media only screen and (max-width: 600px) {
   .upperFooter,

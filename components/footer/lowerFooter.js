@@ -71,7 +71,12 @@ const LowerFooter = () => {
         <div className={style.folloUs}>
           <h4>mettā muse ACCEPTS</h4>
           <div className={style.socialLinkBanner}>
-            <img src="/icons/media.svg" alt="media flag" />
+            <img src="/icons/google.svg" alt="media flag" />
+            <img src="/icons/mastercard.svg" alt="media flag" />
+            <img src="/icons/paypal.svg" alt="media flag" />
+            <img src="/icons/amex.svg" alt="media flag" />
+            <img src="/icons/apple.svg" alt="media flag" />
+            <img src="/icons/opay.svg" alt="media flag" />
           </div>
         </div>
       </div>
